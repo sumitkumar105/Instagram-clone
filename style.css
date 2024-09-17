@@ -1,0 +1,422 @@
+ @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+ body {
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+     font-family: Open Sans, sans-serif;
+ }
+
+ .container {
+     width: 900px;
+
+     margin: 0px auto;
+
+ }
+
+ .padding {
+     padding-top: 80px;
+ }
+
+ .hr-divider {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background-color: #FFFFFF;
+     border-bottom: 1px solid lightgray;
+     z-index: 3;
+ }
+
+ .nav {
+
+     padding: 16px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+
+ }
+
+ .nav-btn {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+ }
+
+ .login-btn {
+     border: none;
+     padding: 10px 20px;
+     border-radius: 6px;
+     font-size: 14px;
+     font-weight: 600;
+     color: #fff;
+     background-color: rgb(0, 149, 246);
+ }
+
+ .sign-in {
+
+     font-size: 16px;
+     font-weight: 600;
+     color: rgb(0, 149, 246);
+ }
+
+ .header {
+     display: flex;
+     gap: 100px;
+     align-items: center;
+     margin-left: 60px;
+ }
+
+ .profile-logo {
+     border: 1px solid lightgray;
+     border-radius: 50%;
+ }
+
+ .profile-name {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+ }
+
+ .verified {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .username {
+     font-size: 18px;
+     font-weight: 600;
+ }
+
+ .btn-group {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .profile-btn {
+     background-color: #EFEFEF;
+     height: 30px;
+     padding: 10px 20px;
+     border-radius: 6px;
+     font-size: 14px;
+     font-weight: 600;
+     border: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .profile-info {
+     display: flex;
+     gap: 40px;
+     margin-top: 10px;
+ }
+
+ .profile-flex {
+     display: flex;
+     gap: 5px;
+     border: none;
+     background-color: transparent;
+     font-size: 14px;
+     font-weight: 600;
+     padding: 0%;
+     cursor: pointer;
+ }
+
+ .profile-flex:hover {
+     color: gray;
+ }
+
+ .profile-summury {
+     margin: 20px 0px;
+ }
+
+ .summury-btn {
+
+     border: none;
+     display: flex;
+     align-items: center;
+     padding: 8px 10px;
+     margin-top: 5px;
+     border-radius: 24px;
+     gap: 5px;
+
+ }
+
+ .summury-description {
+     margin-top: 5px;
+ }
+
+ .link {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+ }
+
+ .fontSize {
+     font-size: 14px;
+ }
+
+ .fontColor {
+     color: rgb(115, 115, 115);
+ }
+
+ .fontWeight {
+     font-weight: 600;
+ }
+
+ /* */
+ .url-link {
+     font-weight: 600;
+     color: rgb(0, 55, 107);
+ }
+
+ .story {
+     display: flex;
+     gap: 40px;
+     margin-left: 30px;
+     margin-top: 30px;
+ }
+
+ .user-story {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .outer-border {
+     height: 87px;
+     width: 87px;
+     border: 1px solid lightgrey;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .story-img {
+     height: 77px;
+     width: 77px;
+     border-radius: 50%;
+ }
+
+ .story-text {
+     margin-top: 10px;
+     font-size: 12px;
+     font-weight: 600;
+     text-overflow: ellipsis;
+ }
+
+ .divider {
+     border: 1px solid lightgrey;
+ }
+
+ .padding-top {
+     padding-top: 50px;
+ }
+
+ .user-post {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+     gap: 20px;
+ }
+
+ .user-info {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .userinfo-text {
+     text-transform: uppercase;
+ }
+
+ .user-info-color {
+     color: gray;
+     font-weight: 600;
+ }
+
+ .text-color {
+     font-weight: 600;
+ }
+
+ .main-post {
+     display: flex;
+     gap: 10px;
+     flex-wrap: wrap;
+     margin-bottom: 10px;
+ }
+
+ .post-card {
+     height: 290px;
+     width: 290px;
+     border: 1px solid lightgray;
+     /* margin: 10px auto; */
+     position: relative;
+
+ }
+
+ .post-img {
+     width: 100%;
+     object-fit: cover;
+     background-position: center;
+ }
+
+ .overlay {
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.276);
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+ }
+
+ .pin-icon {
+     position: absolute;
+     top: 10;
+     right: 10;
+ }
+
+ .card-center-icons {
+     width: 300px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 1;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+
+ }
+
+ .flex-icon {
+
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 5px;
+ }
+
+ .icon-text {
+     font-size: 14px;
+     font-weight: 600;
+     color: white;
+ }
+
+ .card-section {
+     position: relative;
+ }
+
+ .showmore-btn {
+     position: absolute;
+     bottom: 10%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .flex-text {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .text-color {
+     color: #95A4B0;
+     font-weight: 600;
+ }
+
+ .see-all-text {
+     color: rgb(0, 149, 246);
+     font-weight: 600;
+ }
+
+ .accounts {
+     display: flex;
+     gap: 5px;
+ }
+
+ .acoount-card {
+     width: 180px;
+     height: 190px;
+     border: 1px solid lightgray;
+     border-radius: 4px;
+     padding: 10px;
+     margin: 20px 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     position: relative;
+
+ }
+
+ .cancel-icon {
+     position: absolute;
+     top: 10;
+     right: 10;
+     color: #95A4B0;
+ }
+
+ .parent-img {
+     height: 65px;
+     width: 65px;
+ }
+
+ .account-img {
+     width: 100%;
+     border: 1px solid lightgrey;
+     border-radius: 50%;
+ }
+
+ .acount-name {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     margin: 10px 0px;
+ }
+
+ .account-text {
+     font-weight: 600;
+ }
+
+ .acoount-role {
+     color: #95A4B0;
+ }
+
+ .accoun-btn {
+     border: none;
+     background-color: #EFEFEF;
+     font-weight: 600;
+     color: black;
+     margin-top: 10px;
+     border-radius: 8px;
+     padding: 8px 30px;
+ }
+
+ .flex-container {
+     display: flex;
+     font-size: 12px;
+     justify-content: center;
+     font-weight: 600;
+     color: #95A4B0;
+     gap: 8px;
+     margin-top: 40px;
+
+ }
+
+ .footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 12px;
+     font-weight: 600;
+     color: #95A4B0;
+     margin: 20px 0px;
+ }
